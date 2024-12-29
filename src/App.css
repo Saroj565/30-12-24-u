@@ -1,0 +1,242 @@
+/* Basic Navbar styles */
+*{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* background-image: url('E:\Flipkart\fku\src\assets\clark-street-mercantile-qnKhZJPKFD8-unsplash.jpg') !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; */
+ 
+}
+
+
+
+.dashboard{
+ 
+}
+
+
+.user{
+  background: rgb(192, 186, 186);
+  color: #49748d;
+  padding: 50px;
+  border-radius: 5px;
+
+  
+}
+
+.user_btn {
+  background-color: #6d6666 !important;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 30% !important;
+}
+
+.user_btn:hover {
+  background-color: #e2e6ec !important;
+  color: #49748D;
+
+  
+}
+
+.product{
+  background: rgb(192, 186, 186);
+  color: #49748d;
+  padding: 50px;
+  border-radius: 5px;
+}
+
+.product_btn{
+  background-color: #6d6666 !important;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 30% !important;
+}
+
+.product_btn:hover{
+  background-color: #e2e6ec !important;
+  color: #49748D;
+}
+
+.navbar {
+  /* background-color: #ecf0f1; */
+  /* padding: 10px; */
+  position: relative;
+}
+.user_details{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Adjusts to distribute space evenly */
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  background-color: #333;
+  height: 3px;
+  width: 25px;
+  margin: 4px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    width: 100%;
+    background-color: #000;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    text-align: center;
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+
+  .nav-links.mobile {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+
+
+
+.form-container {
+  margin-top: 30px !important;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+.message {
+  text-align: center;
+  margin-bottom: 15px;
+  color: green;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    padding: 15px;
+  }
+
+  input,
+  textarea {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+
